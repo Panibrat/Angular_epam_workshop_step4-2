@@ -1,0 +1,13 @@
+<h1>Edit task</h1>
+
+<form ng-submit="$ctrl.edit()">
+    <input type="text"
+           name="taskName"
+           class="form-control"
+            ng-model="$ctrl.task.name"/>
+    <input type="text"
+           name="taskDescription"
+           class="form-control"
+           ng-model="$ctrl.task.description"/>
+    <button type="submit" class="btn btn-danger">Edit</button>
+</form>

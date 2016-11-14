@@ -1,0 +1,12 @@
+<button class="btn btn-success"
+        ng-click="$ctrl.goBack()">
+        Go back
+</button>
+
+<a class="btn btn-danger" href="#/edit/{{$ctrl.id}}">Edit task</a>
+
+<h2>Task Details</h2>
+<h3>Task name</h3>
+<pre> {{$ctrl.task.name}}</pre>
+<h3>Task description</h3>
+<pre> {{$ctrl.task.description}}</pre>

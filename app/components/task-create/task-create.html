@@ -1,0 +1,16 @@
+<h1>New task</h1>
+
+<form ng-submit="$ctrl.create()">
+    <input type="text"
+           name="taskName"
+           class="form-control"
+           ng-model="$ctrl.task.name"/>
+    <input type="text"
+           name="taskDescription"
+           class="form-control"
+           ng-model="$ctrl.task.description"/>
+    <pre>
+        {{ $ctrl.task | json}}
+    </pre>
+    <button type="submit" class="btn btn-danger">Create</button>
+</form>
